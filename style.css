@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Space Grotesk, sans-serif;
+    outline: none;
+}
+
+body {
+    background-image: url('./assets/blackgroud.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+main {
+    border-radius: 20px;
+    width: min(375px, 100%);
+    background: #f0efefe5;
+    padding: 10px 24px 23px;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    color: #292828;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select,
+input {
+    background: #f0efef;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    min-height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    appearance: none;
+    padding-left: 10px;
+    color: #353232;
+    cursor: pointer;
+}
+
+button {
+    background: #070568;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    min-height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#mask {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(241, 237, 237, 0.116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 16px 24px;
+}
+
+#arrow {
+    height: 75px;
+    margin: 10px 0;
+}
+
+#currency-primary,
+#currency-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background: #adb2b5;
+    padding: 10px 115px;
+    border: 0px solid #000000;
+    box-shadow: 3px 7px 10px rgba(2, 2, 2, 0.5);
+    border-radius: 5px;
+}
+
+.currency-converted,
+.currency-value {
+    font-size: 16px;
+    color: #292828;
+    font-weight: 500;
+}
+
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(150px, 55vw);
+    z-index: 2;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 16px 18px 20px;
+        border-radius: 20px;
+    }
+
+    section {
+        gap: 6px;
+    }
+
+    #arrow {
+        height: 48px;
+        margin: 8px 0;
+    }
+
+    .currency-converted,
+    .currency-value {
+        font-size: 15px;
+    }
+}
